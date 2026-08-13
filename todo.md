@@ -15,3 +15,8 @@
 - [x] Remplacer les étoiles du ruban par le séparateur « // ».
 - [x] Mettre à jour les liens Instagram, Groupe Frénois et l’intitulé de contact.
 - [x] Vérifier les liens et synchroniser la version validée avec le dépôt GitHub associé.
+- [x] Préparer le logo Visionher pour l’écran de protection.
+- [x] Intégrer l’écran d’accès Visionher en français avec le bouton « J’accepte ».
+- [x] Vérifier l’accès, la fermeture et le rendu responsive de l’écran de protection.
+- [x] Confirmer la cohérence du site complet aux formats mobile et desktop après l’intégration Visionher.
+- [x] Remplacer le favicon actuel par le logo Visionher fourni.
