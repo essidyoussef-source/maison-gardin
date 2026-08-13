@@ -75,7 +75,10 @@ export default function Home() {
               <p>Les éléments de direction artistique, contenus, images et développements présentés ici sont confidentiels. Toute reproduction, diffusion ou adaptation nécessite un accord préalable de Visionher Agency.</p>
             </div>
             <button type="button" className="gate-submit" onClick={acceptAccess}>J’accepte <span>↘</span></button>
-            <p className="visionher-gate-footer">Aucune information n’est collectée par cette maquette.</p>
+            <div className="visionher-gate-footer">
+              <p>Aucune information n’est collectée par cette maquette.</p>
+              <p>© 2026 Visionher Agency — Tous droits réservés.</p>
+            </div>
           </div>
         </section>
       )}

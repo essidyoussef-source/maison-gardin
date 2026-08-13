@@ -23,6 +23,9 @@
 - [x] Retirer les champs nom et e-mail de la protection Visionher.
 - [x] Recomposer l’accès Visionher comme un pop-up compact avec un bouton « J’accepte ».
 - [x] Vérifier le pop-up sur desktop et mobile.
-- [ ] Identifier le projet Vercel associé et contrôler son dernier déploiement.
-- [ ] Inclure les visuels de campagne et le logo Visionher dans la livraison Vercel.
-- [ ] Vérifier les réponses HTML et image depuis le domaine de production.
+- [x] Identifier le projet Vercel associé et contrôler son dernier déploiement.
+- [x] Inclure les visuels de campagne et le logo Visionher dans la livraison Vercel.
+- [x] Vérifier les réponses HTML et image depuis le domaine de production.
+- [x] Reproduire l’affichage Vercel signalé et identifier la ressource en échec.
+- [x] Ajouter la mention « © 2026 Visionher Agency — Tous droits réservés » au pop-up.
+- [ ] Déployer puis vérifier le correctif directement sur le domaine de production.
