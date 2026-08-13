@@ -20,3 +20,9 @@
 - [x] Vérifier l’accès, la fermeture et le rendu responsive de l’écran de protection.
 - [x] Confirmer la cohérence du site complet aux formats mobile et desktop après l’intégration Visionher.
 - [x] Remplacer le favicon actuel par le logo Visionher fourni.
+- [x] Retirer les champs nom et e-mail de la protection Visionher.
+- [x] Recomposer l’accès Visionher comme un pop-up compact avec un bouton « J’accepte ».
+- [x] Vérifier le pop-up sur desktop et mobile.
+- [ ] Identifier le projet Vercel associé et contrôler son dernier déploiement.
+- [ ] Inclure les visuels de campagne et le logo Visionher dans la livraison Vercel.
+- [ ] Vérifier les réponses HTML et image depuis le domaine de production.

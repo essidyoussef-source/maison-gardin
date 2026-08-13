@@ -2,16 +2,16 @@
 import { useEffect, useState } from "react";
 
 const assets = {
-  campaign: "/manus-storage/gardin-campaign-collectif-restaure_698b36c7.png",
-  blackCouple: "/manus-storage/gardin-tout-est-en-toi-noir-restaure_22184f3d.png",
-  hoodieBack: "/manus-storage/gardin-hoodie-noir-dos-restaure_ab29febf.png",
-  hoodieDual: "/manus-storage/gardin-hoodie-recto-verso-restaure_c2ca68f7.png",
-  manifesto: "/manus-storage/gardin-manifeste-broderie-restaure_3f2d7710.png",
-  creamCouple: "/manus-storage/gardin-tout-est-en-toi-ecru-restaure_f52b57c5.png",
-  architecture: "/manus-storage/gardin-architecture-ombre_ba7c5970.jpg",
-  material: "/manus-storage/gardin-material-noir_b23d7c2e.jpg",
-  thread: "/manus-storage/gardin-thread-macro_15114b9e.jpg",
-  visionher: "/manus-storage/visionher-logo_4d7aecb6.png",
+  campaign: "https://files.manuscdn.com/user_upload_by_module/session_file/98960062/bcqsEHPQHPoTdtmn.png",
+  blackCouple: "https://files.manuscdn.com/user_upload_by_module/session_file/98960062/JOgjvAwlSOnJydux.png",
+  hoodieBack: "https://files.manuscdn.com/user_upload_by_module/session_file/98960062/MGfkRaPfygkPOlDd.png",
+  hoodieDual: "https://files.manuscdn.com/user_upload_by_module/session_file/98960062/fFmeqLjgessSUVgX.png",
+  manifesto: "https://files.manuscdn.com/user_upload_by_module/session_file/98960062/lIOaOjstGwJBkkvN.png",
+  creamCouple: "https://files.manuscdn.com/user_upload_by_module/session_file/98960062/qeABvVddlJQZTysO.png",
+  architecture: "https://files.manuscdn.com/user_upload_by_module/session_file/98960062/bfjRupQPgjgFfqAf.jpg",
+  material: "https://files.manuscdn.com/user_upload_by_module/session_file/98960062/gEmdUInizgvElxap.jpg",
+  thread: "https://files.manuscdn.com/user_upload_by_module/session_file/98960062/uEmdRDHNwpbrBBnV.jpg",
+  visionher: "https://files.manuscdn.com/user_upload_by_module/session_file/98960062/wHPOKFCeoujnNiMk.png",
 };
 
 export default function Home() {
@@ -19,8 +19,6 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [accessChecked, setAccessChecked] = useState(false);
   const [accessGranted, setAccessGranted] = useState(false);
-  const [visitorName, setVisitorName] = useState("");
-  const [hasAcceptedTerms, setHasAcceptedTerms] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 22);
@@ -59,9 +57,7 @@ export default function Home() {
   }, []);
 
   const closeMenu = () => setMenuOpen(false);
-  const acceptAccess = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    if (!visitorName.trim() || !hasAcceptedTerms) return;
+  const acceptAccess = () => {
     window.sessionStorage.setItem("gardin-visionher-access", "granted");
     setAccessGranted(true);
   };
@@ -70,39 +66,16 @@ export default function Home() {
     <div className="gardin-page">
       {(!accessChecked || !accessGranted) && (
         <section className="visionher-gate" aria-label="Accès confidentiel Visionher">
-          <div className="visionher-gate-shell">
-            <aside className="visionher-gate-aside">
-              <img src={assets.visionher} alt="Visionher Agency" className="visionher-logo" />
-              <div className="visionher-aside-meta"><span>Accès confidentiel</span><span>Maquette GARDIN / 2026</span></div>
-            </aside>
-            <div className="visionher-gate-main">
-              <div className="visionher-gate-intro">
-                <p className="gate-index">01 / Visionher Agency</p>
-                <h1>Avant<br />d’entrer.</h1>
-                <p className="gate-lead">Cette maquette est partagée à titre personnel, dans le cadre de la présentation du projet GARDIN.</p>
-              </div>
-              <div className="gate-statement">
-                <p>Les éléments de direction artistique, contenus, images et développements présentés ici sont confidentiels. Toute reproduction, diffusion ou adaptation nécessite un accord préalable de Visionher Agency.</p>
-              </div>
-              <form className="visionher-form" onSubmit={acceptAccess}>
-                <div className="visionher-fields">
-                  <label>
-                    <span>Nom et prénom</span>
-                    <input value={visitorName} onChange={(event) => setVisitorName(event.target.value)} required autoComplete="name" />
-                  </label>
-                  <label>
-                    <span>E-mail <em>(facultatif)</em></span>
-                    <input type="email" autoComplete="email" />
-                  </label>
-                </div>
-                <label className="gate-consent">
-                  <input type="checkbox" checked={hasAcceptedTerms} onChange={(event) => setHasAcceptedTerms(event.target.checked)} />
-                  <span>J’ai lu et j’accepte les conditions de confidentialité.</span>
-                </label>
-                <button type="submit" className="gate-submit" disabled={!visitorName.trim() || !hasAcceptedTerms}>J’accepte <span>↘</span></button>
-              </form>
-              <div className="visionher-gate-footer"><span>Aucune information n’est enregistrée dans cette maquette.</span><span>Visionher Agency</span></div>
+          <div className="visionher-popover" role="dialog" aria-modal="true" aria-labelledby="visionher-title">
+            <img src={assets.visionher} alt="Visionher Agency" className="visionher-logo" />
+            <p className="gate-index">Visionher Agency / Accès confidentiel</p>
+            <h1 id="visionher-title">Avant<br />d’entrer.</h1>
+            <p className="gate-lead">Cette maquette est partagée à titre personnel, dans le cadre de la présentation du projet GARDIN.</p>
+            <div className="gate-statement">
+              <p>Les éléments de direction artistique, contenus, images et développements présentés ici sont confidentiels. Toute reproduction, diffusion ou adaptation nécessite un accord préalable de Visionher Agency.</p>
             </div>
+            <button type="button" className="gate-submit" onClick={acceptAccess}>J’accepte <span>↘</span></button>
+            <p className="visionher-gate-footer">Aucune information n’est collectée par cette maquette.</p>
           </div>
         </section>
       )}
