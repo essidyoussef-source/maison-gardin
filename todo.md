@@ -12,6 +12,6 @@
 - [x] Ajouter des révélations au scroll pour les blocs éditoriaux et les planches image.
 - [x] Orchestrer des décalages de texte et d’image cohérents avec le rythme GARDIN.
 - [x] Respecter l’option de réduction des mouvements et vérifier les animations sur desktop et mobile.
-- [ ] Remplacer les étoiles du ruban par le séparateur « // ».
-- [ ] Mettre à jour les liens Instagram, Groupe Frénois et l’intitulé de contact.
-- [ ] Vérifier les liens et synchroniser la version validée avec le dépôt GitHub associé.
+- [x] Remplacer les étoiles du ruban par le séparateur « // ».
+- [x] Mettre à jour les liens Instagram, Groupe Frénois et l’intitulé de contact.
+- [x] Vérifier les liens et synchroniser la version validée avec le dépôt GitHub associé.
