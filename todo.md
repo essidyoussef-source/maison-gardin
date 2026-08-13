@@ -1,0 +1,17 @@
+- [x] Remplacer les aplats taupe et écrus de l’interface par du noir, du blanc et des gris neutres.
+- [x] Recomposer les encadrements de planches produit en noir et blanc, sans dominante minérale.
+- [x] Ajuster les légendes, traits et contrastes afin de préserver la lisibilité dans la nouvelle palette.
+- [x] Vérifier les rendus desktop et mobile de la maquette révisée.
+- [x] Mettre le fond de page et les séquences d’ouverture en blanc dominant.
+- [x] Réserver le noir aux inserts de manifeste, aux images et à la signalétique de marque.
+- [x] Vérifier la nouvelle hiérarchie de contraste sur desktop et mobile.
+- [x] Remplacer la bande wordmark monumentale par un ruban de citation défilant.
+- [x] Réécrire la séquence finale dans la voix de manifeste GARDIN.
+- [x] Composer un footer éditorial avec navigation, contacts et mentions.
+- [x] Vérifier le défilement du ruban et le footer sur desktop et mobile.
+- [x] Ajouter des révélations au scroll pour les blocs éditoriaux et les planches image.
+- [x] Orchestrer des décalages de texte et d’image cohérents avec le rythme GARDIN.
+- [x] Respecter l’option de réduction des mouvements et vérifier les animations sur desktop et mobile.
+- [ ] Remplacer les étoiles du ruban par le séparateur « // ».
+- [ ] Mettre à jour les liens Instagram, Groupe Frénois et l’intitulé de contact.
+- [ ] Vérifier les liens et synchroniser la version validée avec le dépôt GitHub associé.
