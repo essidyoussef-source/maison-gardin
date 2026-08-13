@@ -28,4 +28,7 @@
 - [x] Vérifier les réponses HTML et image depuis le domaine de production.
 - [x] Reproduire l’affichage Vercel signalé et identifier la ressource en échec.
 - [x] Ajouter la mention « © 2026 Visionher Agency — Tous droits réservés » au pop-up.
-- [ ] Déployer puis vérifier le correctif directement sur le domaine de production.
+- [x] Déployer puis vérifier le correctif directement sur le domaine de production.
+- [x] Préparer le logo GARDIN fourni pour un affichage net en favicon.
+- [x] Remplacer le favicon actuel par le logo GARDIN et publier la mise à jour.
+- [ ] Vérifier le favicon depuis le domaine Vercel après propagation.
